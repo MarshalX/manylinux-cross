@@ -13,12 +13,16 @@ jobs:
         platform: [
           { arch: "aarch64", manylinux: "manylinux2014" },
           { arch: "aarch64", manylinux: "manylinux_2_24" },
+          { arch: "aarch64", manylinux: "manylinux_2_27" },
           { arch: "armv7l", manylinux: "manylinux2014" },
           { arch: "armv7l", manylinux: "manylinux_2_24" },
+          { arch: "armv7l", manylinux: "manylinux_2_27" },
           { arch: "s390x", manylinux: "manylinux2014" },
           { arch: "s390x", manylinux: "manylinux_2_24" },
+          { arch: "s390x", manylinux: "manylinux_2_27" },
           { arch: "ppc64le", manylinux: "manylinux2014" },
           { arch: "ppc64le", manylinux: "manylinux_2_24" },
+          { arch: "ppc64le", manylinux: "manylinux_2_27" },
           { arch: "ppc64", manylinux: "manylinux2014" },  # ppc64 only supported in manylinux2014
         ]
     steps:
