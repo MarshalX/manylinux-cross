@@ -18,7 +18,7 @@ jobs:
         uses: messense/huaweicloud-github-runner@main
         with:
           mode: start
-          count: 9
+          count: 2
           github-token: ${{ secrets.GH_PAT }}
           huawei-cloud-ak: ${{ secrets.HUAWEI_CLOUD_AK }}
           huawei-cloud-sk: ${{ secrets.HUAWEI_CLOUD_SK }}
@@ -44,15 +44,6 @@ jobs:
         platform: [
           { arch: "i686", manylinux: "manylinux2014" },
           { arch: "i686", manylinux: "manylinux_2_24" },
-          { arch: "aarch64", manylinux: "manylinux2014" },
-          { arch: "aarch64", manylinux: "manylinux_2_24" },
-          { arch: "armv7l", manylinux: "manylinux2014" },
-          { arch: "armv7l", manylinux: "manylinux_2_24" },
-          { arch: "s390x", manylinux: "manylinux2014" },
-          { arch: "s390x", manylinux: "manylinux_2_24" },
-          { arch: "ppc64le", manylinux: "manylinux2014" },
-          { arch: "ppc64le", manylinux: "manylinux_2_24" },
-          { arch: "ppc64", manylinux: "manylinux2014" },  # ppc64 only supported in manylinux2014
         ]
     steps:
       - uses: actions/checkout@v2
